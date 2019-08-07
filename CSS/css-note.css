@@ -1,0 +1,8 @@
+/* input去轮廓线 */
+input {
+  outline: none;
+}
+/* input-placeholder color Set up */
+input::-webkit-input-placeholder{
+  color:red;
+}
