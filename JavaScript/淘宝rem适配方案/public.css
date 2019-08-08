@@ -1,0 +1,115 @@
+/*********************************
+
+* Magic. Do not touch！
+* When I wrote this, only God and I understood what I was doing.
+* Now, God only knows.
+*
+*project: Public Library
+
+**********************************/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    margin: auto;
+    position: relative;
+    display: -webkit-box;
+    overflow: hidden;
+    height: 100%;
+    min-width: 320px;
+    background: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: stretch;
+}
+
+body {
+    width: 10rem;
+    font-family: Helvetica;
+}
+
+a {
+    outline: 0 none;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    border: none;
+    width: 100%;
+    width: auto \9;
+    height: auto;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    outline: 0 none;
+    -webkit-appearance: none;
+    border: 0;
+    font-size: .4rem
+}
+
+button {
+    outline: 0 none;
+    border: 0 none;
+    background: 0 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+section,
+a,
+button,
+div,
+img {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.clear:after {
+    clear: both;
+    display: block;
+    height: 0;
+    content: "";
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* base end */
+section {
+    position: relative;
+    margin: 0 auto;
+    width: 10rem;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
