@@ -74,10 +74,10 @@
 
 ```text
     # 1. 下载mockjs
-    npm install mockjs@1.0.1-beta3 -D       
+    npm install mockjs@1.0.1-beta3 -D
     # 或添加到package.json的devDependencies中,"mockjs": "1.0.1-beta3",再执行npm i
     
-    # 2. 
+    # 2. 🏃🏃🏃 https://github.com/GGupzHH/Vue-cli-3.0-Mock 
 ```
 
 > vue.config.js的配置
