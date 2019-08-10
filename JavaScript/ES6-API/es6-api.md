@@ -22,7 +22,7 @@ reducer 对于很多场景都很适用，但是它们对于**将一种逻辑应�
     /* 简化1 -> reduce使用*/
     const nums1 = [1, 2, 3];
     const initialValue1 = 0;
-     reducer1 = function (acc, item) { 
+    reducer1 = function (acc, item) { 
         return acc + item;
     }
     const total1 = nums1.reduce(reducer1, initialValue1);
@@ -78,13 +78,17 @@ reducer 对于很多场景都很适用，但是它们对于**将一种逻辑应�
 
 ```js
 const nums = [3, 5, 6, 82, 1, 4, 3, 5, 82];
-
+// 将一个空对象作为最终得到的单一结果
+// tally是那个单一结果（对象）
+// 三目元算符  
+// 首先去判断单一结果（对象）中是否有这个数组的这一项  如果没有 就将当前此时数组的这一项设置为单一结果的key，value为1
+// 如果有就将当前单一结果的key对应的value值++  起到计数作用
 const result = nums.reduce((tally, amt) => {
-    tally[amt] ? tally[amt]++ : tally[amt] = 1;
-    return tally;
-}, {});
+    tally[amt] ? tally[amt]++ : tally[amt] = 1
+    return tally
+}, {})
 
-console.log(result);
+console.log(result)
 //{ '1': 1, '3': 2, '4': 1, '5': 2, '6': 1, '82': 2 }
 
 ```
